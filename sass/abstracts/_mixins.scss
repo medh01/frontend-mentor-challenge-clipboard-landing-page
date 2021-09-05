@@ -1,0 +1,40 @@
+@mixin btn($color){
+    background-color: $color;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: $font-base;
+    transition: $transition;
+    &:hover{
+        opacity: 0.5;
+    }
+    @media screen and (max-width: 360px){
+        display: block;
+        margin: 0 auto 20px auto;
+        padding: 10px 0;
+        width: 80%;
+    }
+
+}
+
+@mixin heading(){
+    text-align: center;
+    color: $dark-grayish-blue;
+    margin-bottom: 10px;
+}
+
+@mixin paragraph(){
+    text-align: center;
+    color: $grayish-blue;
+    width: 40%;
+    margin: 0 auto;
+    font-size: $font-base;
+    margin-bottom: 30px;
+    @media screen and (max-width: 932px){
+        width: 70%;
+    }
+    @media screen and (max-width: 486px){
+        width: 90%;
+    }
+}

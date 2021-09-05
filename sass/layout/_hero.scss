@@ -1,0 +1,21 @@
+.hero{
+    margin-top: 10px;
+    h1{
+        @include heading();
+        font-size: $font-base*2;
+    }
+    p{
+        @include paragraph();
+        
+    }
+    .buttons{
+        text-align: center;
+        a:first-child{
+            @include btn($strong-cyan);
+        }
+        a:last-child{
+            @include btn($light-blue);
+        }
+
+    }
+}

@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-image: url('../../images/bg-header-desktop.png');
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    @media screen and (max-width: 375px){
+        background-image: url("../../images/bg-header-mobile.png");
+    }
+}
